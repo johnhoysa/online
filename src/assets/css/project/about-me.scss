@@ -22,22 +22,9 @@
   color: $color-dark;
 }
 
-.about-me ul:last-of-type {
-  display: none;
-}
 @media (max-width: 744px) {
   .about-me {
     margin-top: 40px;
     margin-bottom: 40px;
-  }
-
-  .about-me ul:last-of-type {
-    display: flex;
-    margin-top: 24px;
-    align-items: flex-end;
-    justify-content: flex-start;
-  }
-  .about-me ul:last-of-type li {
-    margin-right: 16px;
   }
 }

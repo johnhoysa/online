@@ -1,0 +1,32 @@
+.container {
+  @include container();
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 48px;
+}
+
+.column-large {
+  grid-column: span 8;
+}
+
+.column-large h2 {
+  margin-bottom: 0px;
+  font-size: 40px;
+}
+
+.column-large p {
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+@media (max-width: 744px) {
+  .container {
+    display: block;
+  }
+  .column-large h2 {
+    margin-bottom: 0px;
+    font-size: 32px;
+  }
+}

@@ -5,18 +5,16 @@
   "main": "scripts.js",
   "license": "ics",
   "devDependencies": {
-    "npm-watch": "^0.6.0",
     "node-minify": "^3.6.0",
     "nodemon": "^1.19.0",
     "node-sass": "^4.10.0"
   },
   "scripts": {
     "clean": "rm -rf ./build",
-    "build": "npm run clean && npm run build-css && npm run build-index && npm run build-images",
+    "build": "npm run clean && npm run build-css && npm run build-html && npm run build-images",
     "build-css": "mkdir -p ./build/assets/css && node-sass --output-style compressed -o ./build/assets/css ./src/assets/css/styles.scss",
     "watch-css": "nodemon -w ./src/assets/css -e scss -x \"npm run build-css\"",
-    "build-index": "mkdir -p ./build/ && cp -r ./src/pages/ ./build/",
-    "watch-index": "nodemon -w ./src/pages/index.html -x \"npm run build-index\"",
+    "build-html": "mkdir -p ./build/pages/index.html && cp -r ./src/pages/ ./build/",
     "build-images": "mkdir -p ./build/assets/images && cp -r ./src/assets/images/ ./build/assets/images/"
   }
 }

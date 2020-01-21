@@ -8,8 +8,6 @@ Compile CSS: `npm run build-css`
 
 Watch CSS: `npm run watch-css`
 
-Build index page: `npm run build-index`
-
-Watch index page: `npm run watch-index`
+Build HTML: `npm run build-html`
 
 Build Images: `npm run build-images`

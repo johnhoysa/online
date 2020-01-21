@@ -14,7 +14,7 @@ header:after {
   background: repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1) 1px, rgba(999, 99, 99, 0.1) 1px, rgba(255, 255, 255, 0.1) 2px);
 }
 
-.nav__items {
+header .nav__items {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -22,7 +22,7 @@ header:after {
   font-size: 18px;
 }
 
-.nav__item {
+header .nav__item {
   display: flex;
   width: 248px;
 
@@ -30,27 +30,27 @@ header:after {
   text-align: right;
 }
 
-.nav__item:first-of-type {
+header .nav__item:first-of-type {
   background-color: $color-highlight;
 }
-.nav__item a {
+header .nav__item a {
   width: 100%;
   padding: 8px;
   color: #fff;
   font-family: 'PT Sans', sans-serif;
 }
-.nav__item a:hover {
+header .nav__item a:hover {
   background-color: lighten($color-dark, 20%);
 }
 
 @media (max-width: 744px) {
-  .nav__items {
+  header .nav__items {
     width: 100%;
   }
-  .nav__item {
+  header .nav__item {
     width: 33%;
   }
-  .nav__item:first-of-type {
+  header .nav__item:first-of-type {
     border: none;
   }
 }

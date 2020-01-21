@@ -8,22 +8,22 @@
 //Header
 @import './project/header.scss';
 //Home
-@import './project/containers.scss';
 @import './project/aside.scss';
 @import './project/about-me.scss';
 
 //Footer
 @import './project/footer.scss';
 
-.container {
+main {
   @include container();
   margin-top: 40px;
+  flex: 1;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 48px;
 }
 @media (max-width: 744px) {
-  .container {
+  main {
     display: block;
   }
 }
@@ -37,8 +37,4 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-}
-
-main {
-  flex: 1;
 }

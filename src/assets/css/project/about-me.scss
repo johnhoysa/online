@@ -1,29 +1,20 @@
-.column-large {
+.about-me {
+  margin-top: 0;
+  margin-bottom: 56px;
   grid-column: span 8;
 }
 
-.column-large h2 {
+.about-me h2 {
   margin-bottom: 0px;
   font-size: 40px;
 }
 
-.column-large p {
+.about-me p {
   margin-top: 16px;
   font-size: 18px;
   line-height: 140%;
 }
 
-@media (max-width: 744px) {
-  .column-large h2 {
-    margin-bottom: 0px;
-    font-size: 32px;
-  }
-}
-
-.about-me {
-  margin-top: 0;
-  margin-bottom: 56px;
-}
 .about-me p:first-of-type {
   margin-top: 8px;
 }
@@ -48,5 +39,10 @@
   .about-me {
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+
+  .about-me h2 {
+    margin-bottom: 0px;
+    font-size: 32px;
   }
 }

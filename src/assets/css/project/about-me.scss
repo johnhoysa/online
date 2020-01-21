@@ -1,3 +1,25 @@
+.column-large {
+  grid-column: span 8;
+}
+
+.column-large h2 {
+  margin-bottom: 0px;
+  font-size: 40px;
+}
+
+.column-large p {
+  margin-top: 16px;
+  font-size: 18px;
+  line-height: 140%;
+}
+
+@media (max-width: 744px) {
+  .column-large h2 {
+    margin-bottom: 0px;
+    font-size: 32px;
+  }
+}
+
 .about-me {
   margin-top: 0;
   margin-bottom: 56px;

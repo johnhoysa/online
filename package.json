@@ -11,10 +11,12 @@
   },
   "scripts": {
     "clean": "rm -rf ./build",
-    "build": "npm run clean && npm run build-css && npm run build-html && npm run build-images",
+    "build": "npm run clean && npm run build-css && npm run build-html && npm run build-images && npm run build-docs",
     "build-css": "mkdir -p ./build/assets/css && node-sass --output-style compressed -o ./build/assets/css ./src/assets/css/styles.scss",
     "watch-css": "nodemon -w ./src/assets/css -e scss -x \"npm run build-css\"",
-    "build-html": "mkdir -p ./build/pages/index.html && cp -r ./src/pages/ ./build/",
-    "build-images": "mkdir -p ./build/assets/images && cp -r ./src/assets/images/ ./build/assets/images/"
+    "build-html": "mkdir -p ./build/ && cp -r ./src/pages/ ./build/",
+    "build-docs": "mkdir -p ./build/assets/docs && cp -r ./src/assets/docs/ ./build/assets/docs/",
+    "build-images": "mkdir -p ./build/assets/images && cp -r ./src/assets/images/ ./build/assets/images/",
+    "watch-html": "nodemon -e html -x \"npm run build-html\""
   }
 }

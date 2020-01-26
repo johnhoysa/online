@@ -1,18 +1,20 @@
-//Global
-@import './project/reset';
-@import './project/variables.scss';
-@import './project/links';
+@import './vendor/reset';
+
 @import './mixins/container.scss';
-@import './project/type.scss';
 
-//Header
-@import './project/header.scss';
-//Home
-@import './project/aside.scss';
-@import './project/about-me.scss';
+@import './modules/social-icons.scss';
 
-//Footer
-@import './project/footer.scss';
+@import './global/variables.scss';
+
+@import './global/links';
+@import './global/type.scss';
+
+@import './partials/header.scss';
+
+@import './partials/aside.scss';
+@import './partials/about-me.scss';
+
+@import './partials/footer.scss';
 
 main {
   @include container();
@@ -37,4 +39,8 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+}
+
+.about-me ul.social__icons {
+  justify-content: flex-start;
 }

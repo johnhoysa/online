@@ -18,13 +18,16 @@
 .about-me p:first-of-type {
   margin-top: 8px;
 }
-.about-me ul,
-.about-me li {
+.about-me > ul,
+.about-me > li {
   font-size: 16px;
   line-height: 140%;
 }
-
-.about-me li {
+.about-me ul li ul {
+  margin-left: 16px;
+}
+.about-me > ul > li {
+  margin-top: 16px;
   margin-bottom: 0;
 }
 

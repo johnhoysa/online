@@ -5,9 +5,9 @@
   "main": "scripts.js",
   "license": "ics",
   "devDependencies": {
-    "node-minify": "^3.6.0",
-    "nodemon": "^1.19.0",
-    "node-sass": "^4.10.0"
+    "node-minify": "^0.11.1",
+    "node-sass": "^5.0.0",
+    "nodemon": "^1.19.0"
   },
   "scripts": {
     "clean": "rm -rf ./build",

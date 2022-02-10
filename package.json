@@ -6,7 +6,7 @@
   "license": "ics",
   "devDependencies": {
     "node-minify": "^0.11.1",
-    "node-sass": "^5.0.0",
+    "node-sass": "^7.0.0",
     "nodemon": "^2.0.7"
   },
   "scripts": {

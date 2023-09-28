@@ -1,12 +1,22 @@
 // Social Icons
 .social__icons {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   margin-top: 16px;
 }
 .social__icon {
   margin-right: 24px;
 }
+
+.social__icon a {
+  align-items: baseline;
+  display: flex;
+  font-size: 11px;
+  gap: 4px;
+  letter-spacing: 0.1px;
+
+}
+
 .social__icon svg:hover {
   opacity: 0.5;
 }

@@ -1,7 +1,12 @@
 a,
 a:hover {
+  color: $color-highlight;
   text-decoration: none;
   line-height: 100%;
+}
+ a:hover {
+  color: $color-dark;
+
 }
 
 .img-resp {
